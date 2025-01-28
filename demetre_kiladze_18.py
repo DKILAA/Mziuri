@@ -1,16 +1,16 @@
 import math
 class triangle :
     def __init__(self,a,b,c):
-        self.a = a 
-        self.b  = b
-        self.c = c
+        self.__a = a 
+        self.__b  = b
+        self.__c = c
 
     def perimeter(self) :
-        return self.a + self.b +self.c
+        return self.__a + self.__b +self.__c
     
     def area(self) :
-        s = (self.a + self.b +self.c ) / 2
-        return math.sqrt(s *(s - self.a) * (s - self.b) * (s - self.c))
+        s = (self.__a + self.__b +self.__c ) / 2
+        return math.sqrt(s *(s - self.__a) * (s - self.__b) * (s - self.__c))
     
 triangle_1 = triangle (5,6,7)
 print ("triangle_1 perimneter ", triangle_1.perimeter())
