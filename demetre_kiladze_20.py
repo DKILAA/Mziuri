@@ -9,11 +9,11 @@
     
 # class Student(people) :
 #     def get_email(self) :
-#         return f"{self.firstname}.{self.lastname}@1mziuri.ge"
+#         return f"{self.firstname}.{self.lastname}.1@mziuri.ge"
     
 # class Lecturer(people) :
 #     def get_email(self) :
-#         return f"{self.firstname}.{self.lastname}@1mziuri.ge"
+#         return f"{self.firstname}.{self.lastname}@mziuri.ge"
 
 # p1 = people("jemali", "Malatsidze")
 # p2 = people ("Levani", "Jajanidze")
