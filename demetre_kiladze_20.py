@@ -62,32 +62,6 @@
 # print (p1.booking())
 
     #davaleba 3
-# class Contacts:
-#     def __init__(self, name, phone):
-#         self.name = name
-#         self.phone = phone
-
-# class Friends(Contacts, MailSender):
-#     def __init__(self, name, phone, email):
-#         super().__init__(name, phone)
-#         self.email = email
-
-# class Family(Contacts, MailSender):
-#     def __init__(self, name, phone, email, birthday):
-#         super().__init__(name, phone)
-#         self.email = email
-#         self.birthday = birthday
-
-# class MailSender:
-#     def send_mail(self):
-#         print("Your mail sent to:", self.email)
-
-# p1 = Friends("Jemala", "591-991-991", "JemalaTyemala@gmail.com")
-# p2 = Family("Vano", "555-555-555", "VanoVano19@gmail.com", "29/02/2000")
-
-# p1.send_mail()
-
-
 class Contacts:
     def __init__(self, name, phone):
         self.name = name
@@ -95,10 +69,7 @@ class Contacts:
 
 class MailSender:
     def send_mail(self):
-        if hasattr(self, 'email'):
-            print("Your mail sent to:", self.email)
-        else:
-            print("No email address provided.")
+        print("Your mail sent to:", self.email)
 
 class Friends(Contacts, MailSender):
     def __init__(self, name, phone, email):
@@ -116,3 +87,6 @@ p2 = Family("Vano", "555-555-555", "VanoVano19@gmail.com", "29/02/2000")
 
 p1.send_mail()
 p2.send_mail()
+
+
+    #davaleba 4
