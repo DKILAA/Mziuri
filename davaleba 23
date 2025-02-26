@@ -1,0 +1,44 @@
+class Bank_account:
+    def __init__(self, account_name, balance):
+        self.__account_name = account_name
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+        print(f"Tanxis shetana shesrulebulia!  Balance: {self.__balance}")
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+            print(f"Tanxis gamotana shesrulebulia!  Balance: {self.__balance}")
+        else:
+            print("ERROR! Not enough balance.")
+
+    def get_account_name(self):
+        return self.__account_name
+
+    def get_balance(self):
+        return self.__balance
+
+p1 = Bank_account("Mamuka", 50)
+
+print("Sheiyvanet saxeli:")
+name = input()
+p1._Bank_account__account_name = name
+print("Sheiyvanet tanxa:")
+balance = int(input())
+p1._Bank_account__balance = balance
+
+print("Sheiyvanet shesabamisi kodi romlis operaciac gsurt:")
+print("1. tanxis shetana     2. tanxis gamnotana")
+num = int(input())
+if num == 1:
+    print("Ra tanxis shetana gsurt?")
+    amount = int(input())
+    p1.deposit(amount)
+elif num == 2:
+    print("Ra tanxis gamotana gsurt?")
+    amount = int(input())
+    p1.withdraw(amount)
+else:
+    print("ERROR!")
