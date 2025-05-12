@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ჩემი საიტი{% endblock %}</title>
+</head>
+<body>
+
+    <h1>ჩემი ვებსაიტი</h1>
+    <nav>
+        <a href="/">მთავარი</a> |
+        <a href="/about">ჩვენ შესახებ</a>
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

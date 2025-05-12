@@ -1,0 +1,12 @@
+{% extends 'davaleba_33.html' %}
+
+{% block title %}მთავარი გვერდი{% endblock %}
+
+{% block content %}
+  <h2>ყველა იუზერი</h2>
+  <ul>
+    {% for user in users %}
+      <li>{{ user.full_name }} - {{ user.email }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
